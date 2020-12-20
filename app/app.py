@@ -1,12 +1,12 @@
 from flask import Flask, request, jsonify
 import json
 
-from registerUser import registerUserSQL
+from registerUser import registerUserSQL, showUsers
 app = Flask(__name__)
 
 @app.route('/')
 def homeendpoint():
-    return 'Main Endpoint'
+    return str(showUsers())
     
 @app.route('/registerUser', methods=["GET", "POST"])
 def registerUser():

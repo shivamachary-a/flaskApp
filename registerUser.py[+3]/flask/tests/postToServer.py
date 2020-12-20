@@ -1,8 +1,8 @@
 import requests
 import json
 
-url = "http://0.0.0.0:8080/registerUser"
-obj = json.dumps({"firstName":"Bob",
+url = "http://52.59.231.135:8080/registerUser"
+obj = json.dumps({"firstName":"Shivam",
     "lastName":"Smith",
     "email":"bob@smith",
     "passHash": "password"
