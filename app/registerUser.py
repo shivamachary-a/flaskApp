@@ -44,7 +44,7 @@ def showUsers():
     cur.execute("SELECT * FROM users;")
     result = cur.fetchall()
     cur.close()
-    print(result)
+    return str(result)
     
    
    
